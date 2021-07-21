@@ -234,7 +234,7 @@ function preset() {
     let iTemp = Math.floor(Math.random() * maxQuote);
     let titleOnLoad = document.querySelector('#title');
     titleOnLoad.style.fontSize = "12px";
-    titleOnLoad.style.cursor = "grab";
+    titleOnLoad.style.cursor = "url(Purple-Multi-Outline.cur), auto";
     let quoteOnLoad = document.querySelector('#quotes');
     quoteOnLoad.innerHTML = `${quotesAll[iTemp]}`;
 }

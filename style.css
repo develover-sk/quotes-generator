@@ -1,6 +1,7 @@
 html,
 body {
     height: 100%;
+    cursor: url(Pink-Multi-Outline.cur), auto;
 }
 
 body {
@@ -93,7 +94,7 @@ h2 {
     overflow: hidden;
     font-variant: small-caps;
     font-weight: 900;
-    cursor: move;
+    cursor: url(Purple-Multi-Outline.cur), auto;
 }
 
 .quotes-div {
