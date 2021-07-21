@@ -80,6 +80,7 @@ h2 {
 }
 
 #title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     vertical-align: top;
 }
@@ -97,8 +98,9 @@ h2 {
 
 .quotes-div {
     margin-top: 10%;
-    height: 140px;
-    padding: 12%;
+    height: 130px;
+    padding: 8%;
+    padding-bottom: 12%;
 }
 
 #author {

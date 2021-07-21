@@ -208,6 +208,22 @@ const authorAll = [
 var len;
 var maxQuote;
 
+var i = -1;
+var temp = -1;
+var lastQ = -1;
+var lastNextQ = -1;
+var prevQ = -1;
+var nextQ = -1;
+
+var r1;
+
+
+function randNum() {
+    r1 = Math.random();
+    i = Math.floor(r1 * maxQuote);
+}
+
+
 function preset() {
     disablePrevBtn();
     disableNextBtn();
@@ -215,6 +231,12 @@ function preset() {
     disableLastNextQBtn();
     len = quotesAll.length;
     maxQuote = parseInt(len - 1);
+    let iTemp = Math.floor(Math.random() * maxQuote);
+    let titleOnLoad = document.querySelector('#title');
+    titleOnLoad.style.fontSize = "12px";
+    titleOnLoad.style.cursor = "grab";
+    let quoteOnLoad = document.querySelector('#quotes');
+    quoteOnLoad.innerHTML = `${quotesAll[iTemp]}`;
 }
 
 
@@ -267,23 +289,6 @@ function enableLastNextQBtn() {
 }
 
 
-var i = -1;
-var temp = -1;
-var lastQ = -1;
-var lastNextQ = -1;
-var prevQ = -1;
-var nextQ = -1;
-
-var r1;
-var r2;
-
-
-function randNum() {
-    r1 = Math.random();
-    i = Math.floor(r1 * maxQuote);
-}
-
-
 
 function printQuote(index) {
 
@@ -291,7 +296,8 @@ function printQuote(index) {
     let quote = document.querySelector('#quotes');
     let auth = document.querySelector('#author');
     let cred = document.querySelector('#post-credit');
-    title.innerHTML = "&#128525;";
+    title.innerHTML = "&#128512;";
+    title.style.fontSize = '1.2em';
     quote.innerHTML = `&ldquo; ${quotesAll[index].toUpperCase()} &rdquo;`;
     auth.innerHTML = `&mdash; ${authorAll[index]}`;
     cred.innerHTML = `${index+1}`;
