@@ -294,7 +294,7 @@ function printQuote(index) {
     title.innerHTML = "&#128525;";
     quote.innerHTML = `&ldquo; ${quotesAll[index].toUpperCase()} &rdquo;`;
     auth.innerHTML = `&mdash; ${authorAll[index]}`;
-    cred.innerHTML = `${index}`;
+    cred.innerHTML = `${index+1}`;
 }
 
 function replaceQuote() {
