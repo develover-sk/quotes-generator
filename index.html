@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes Generator</title>
+    <link rel="icon" href="2190622.png" type="image/gif" sizes="16x16">
+    <!-- icon used - "https://img-premium.flaticon.com/png/512/2190/premium/2190622.png?token=exp=1626798728~hmac=b5fb0d269df54d2844914f1a8ae50414" -->
+    <link rel="stylesheet" href="style.css">
+    <script src="func.js"></script>
+</head>
+
+<body onload="preset()">
+    <div class="container">
+        <!-- <div class="center"> -->
+        <h2>Some Inspiring and Motivational Quotes</h2>
+        <div class="main-quiz-box">
+            <div id="text">
+                <p id="title">&nbsp;</p>
+                <div class="quotes-div">
+                    <p id="quotes" draggable="true">Welcome to The Quotes Page.<br> Thanks for the Visit! <br> &#128151;</p>
+                    <p id="author"></p>
+                </div>
+                <p id="post-credit"></p>
+            </div>
+            <span id="copy">
+                <img src="2580383.png" onclick="copyIt()"></a>
+                <!-- icon used - "https://image.flaticon.com/icons/png/512/2580/2580383.png" -->
+            </span>
+        </div>
+        <div class="buttons">
+            <!-- <div class="btn-box-center"> -->
+            <div class="btn-center"><input type="button" class="previous box boxColor" value="&lt;&lt;&lt;" onclick="getPrev()">
+            </div>
+            <div class="btn-center"><input type="button" class="last box boxColor" value="&lt;" onclick="last()">
+            </div>
+            <div class="btn-center"><input type="button" class="random box boxColor" value="GET A RANDOM QUOTE" autofocus onclick="replaceQuote()">
+            </div>
+            <div class="btn-center"><input type="button" class="lastNext box boxColor" value="&gt;" onclick="lastNext()">
+            </div>
+            <div class="btn-center"><input type="button" class="next box boxColor" value="&gt;&gt;&gt;" onclick="getNext()">
+            </div>
+            <!-- </div> -->
+        </div>
+        <!-- </div> -->
+    </div>
+</body>
+
+</html>
